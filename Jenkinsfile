@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Clone from GitHub') {
              steps {
-                 git url: 'git@github.com:scottpgallagher/chef-national_parks-aws.git', branch: 'master', credentialsId: 'GitHub'
+                 git url: 'git@github.com:scottpgallagher/chef-national_parks-aws.git', branch: 'master', credentialsId: 'github'
              }
          }
         stage('Build Chef Habitat Artifact') {
